@@ -7,7 +7,8 @@ export = FormBuilder;
 export as namespace FormBuilder;
 
 declare const FormBuilder: React.FC<FormBuilderInterface> & {
-    defineWidget: (key: string, component: React.ReactComponentElement, metaConvertor?: (field: FieldType) => FieldType) => void
+    defineWidget: (key: string, component: React.ReactComponentElement, metaConvertor?: (field: FieldType) => FieldType) => void,
+    useForceUpdate: () => () => void,
 }
 
 export declare type FormItemLayoutType = {
