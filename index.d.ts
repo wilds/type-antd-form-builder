@@ -79,6 +79,8 @@ export declare type FieldType = {
     /** If set to true, every widget in field will be given a disabled property regardless of if it's supported. */
     disabled?: boolean;
 
+    dynamic?: boolean;
+
     /** In multiple columns layout, used to clear left, right or both side fields. Like the clear property in css. Could be left: the field starts from a new row; right: no fields behind the field; both: no other fields in the same row. */
     clear?: 'left' | 'right' | 'both';
 
